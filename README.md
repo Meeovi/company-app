@@ -1,30 +1,22 @@
 ## This Application is in Alpha Release ##
 
-# Alternate Framework
+# Starter Template
 
-A powerful, consistent, and flexible headless content management framework. Built using the Nuxtjs framework, Alternate Framework provides headless content management system capabilities for sites of all types. 
-
-https://app.netlify.com/start/deploy?repository=https://github.com/meeovi/AlternateFramework
+A powerful, consistent, and flexible starter template with tons of integrations. 
 
 ## Features include:
 
-- Alternate Framework supports MySQL, SQlite, Postgres, Supabase, SQL Server, CockroachDB
-- Extendible system that supports Nuxtjs, Vuejs modules, and Fastify extensions
-- Per page & entire system SEO
-- Graphql support & Rest Apis with Rest Documentation
-- Integrated reporting tools with Sentry integration
-- Easily deploy with Netlify
-- Enhanced Security with monthly updates
-- Designed with Bootstrap and Fontawesome
-- Multi-lingual support
-- Dashboard sneek peak with your data
-- Customer management features including creating & managing customers.
-- Flexible Media Manager with Visual Previews, expiration date, and comments (coming soon).
-- Filterable datatables with export functionality
-- PWA Support with push notifications, desktop notifications, and offline caching
-- Mobile, Desktop, and Docker support (coming soon)
+- Starter Template supports Graphql, Rest Apis
+- Extendible system that supports Nuxtjs, Vuejs modules
+- Wordpress and Woocommerce Integration
+- Searchkit and Instantsearch.js support
+- Added an error page
+- Vuetify, Fontawesome integration for design system
+- Google Tag Manager, Google Analytics integration
+- Stripe integration for payments and commerce
+- Directus integration for content management system integration along with Wordpress
 
-and much more. Take a look at www.Alternate Framework.com 
+and much more. Take a look at www.Starter Template.com 
 
 ## Prerequisites:
 
@@ -45,8 +37,8 @@ Add your database credentials to DATABASE_URL, example is DATABASE_URL=postgresq
 ## Steps to Install - 10 Minute Install
 
 1. git clone https://github.com/meeovi/AlternateFramework
-2. cd Alternate Framework
+2. cd Starter Template
 3. npm install
 4. npm run all
 
-Alternate Framework will be at: http://localhost:3001
+Starter Template will be at: http://localhost:3001
