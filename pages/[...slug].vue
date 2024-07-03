@@ -1,6 +1,6 @@
 <template>
     <div>
-
+      
     </div>
 </template>
 
@@ -12,6 +12,6 @@ export default {
 
 <script setup>
     useHead({
-        title: '',
+        title: ''
     })
 </script>

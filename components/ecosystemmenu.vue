@@ -12,14 +12,14 @@
                       <v-icon icon="fas fa-circle-xmark"></v-icon>
                   </v-btn>
                   <v-card-title>
-                      <span class="text-h6">AppDev Community</span>
+                      <span class="text-h6">The Meeovi Company</span>
                   </v-card-title>
               </v-toolbar>
               <v-row style="padding: 10px;">
                   <v-col cols="3">
-                      <a href="https://www.amazon.com"><v-card class="mx-auto" width="200" prepend-icon="fas fa-shopping-cart">
+                      <a href="https://www.meeovi.com"><v-card class="mx-auto" width="200" prepend-icon="fas fa-shopping-cart">
                           <template v-slot:title>
-                              Amazon
+                              Meeovi
                           </template>
                       </v-card></a>
                   </v-col>

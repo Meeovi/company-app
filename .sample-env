@@ -2,57 +2,47 @@
 
 # Database URL
 
-DATABASE_URL=''
-
-TEST_URL=''
-
-MY_SQL=''
-
-SQLITE_URL='file://server/config/database/main.db'
-
-# Supabase URL and Credentials (Supabase is not required, but recommended)
-
-YOUR_SUPABASE_URL=''
-YOUR_SUPABASE_KEY=''
-
-# DATABASE DETAILS
-
-DB_HOST=''
-DB_PORT=''
-DB_USER=''
-DB_PASSWORD=''
-DB_DATABASE='postgres'
-DB_SCHEMA=''
-DB_SSL=false
+DATABASE_URL='postgresql://username:password@host:port/database'
 
 # Directus Credentials
 
-DIRECTUS_URL='http://meeovicms.com:00000/'
-DIRECTUS_TOKEN='-'
-DIRECTUS_EMAIL=
-DIRECTUS_PASSWORD=
+DIRECTUS_URL=''
+DIRECTUS_GRAPHQL='/graphql'
+NUXTUS_DIRECTUS_STATIC_TOKEN=''
+NUXTUS_DIRECTUS_AUTH=true
+NUXTUS_DIRECTUS_ADMIN_EMAIL=
+NUXTUS_DIRECTUS_ADMIN_PASSWORD=
 
-# Meilisearch Credentials
+#VDURE_URL='http://194.164.19.137:3000/shop-api'
 
-HOSTURL='https://meeovicms.com:7777/'
-SEARCH_APIKEY='<your_public_key>'
-ADMIN_APIKEY='<your_secret_key>'
+# Google Analytics
 
-# Storyblok Credentials
+NUXT_PUBLIC_GTAG_ID='UA-'
 
-STORYBLOK_URL='https://gapi.storyblok.com/v1/api'
-STORYBLOK_TOKEN=''
+# Graphql
 
-# Sentry Credentials
+GRAPHQL_HOST="http://localhost/graphql"
+GRAPHQL_TOKEN="123456"
 
-SENTRY_DSN=''
+# Stripe Credentials
 
-# Graphql Endpoint
+STRIPE_SECRET_KEY=
+STRIPE_PUBLISHABLE_KEY=
+STRIPE_WEBHOOK_SECRET=
 
-GQL_HOST='http://localhost:8087/v1/graphql'
-GQL_HEADERS=''
+PAYPAL_CLIENT_ID=YOUR_CLIENT_ID_GOES_HERE
+PAYPAL_CLIENT_SECRET=YOUR_SECRET_GOES_HERE
+# Turnstile Credentials
 
-# Keycloak Credentials
+NUXT_PUBLIC_TURNSTILE_SITE_KEY=''
+NUXT_TURNSTILE_SECRET_KEY=''
 
-KEYCLOAK_API_URL='https://meeovicms.com:1000'
-KEYCLOAK_CLIENTID=''
+# Wordpress Credentials
+
+API_URL_GRAPHQL='/graphql'
+API_URL="https://example.com"
+WORDPRESS_TOKEN=''
+WP_API_USERNAME=
+WP_API_PASSWORD=
+WOOCOMMERCE_CONSUMER_KEY=""
+WOOCOMMERCE_CONSUMER_SECRET=""

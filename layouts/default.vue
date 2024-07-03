@@ -62,9 +62,9 @@
             <v-expansion-panels variant="accordion">
             <v-expansion-panel title="Departments" expand-icon="fas fa-plus" collapse-icon="fas fa-minus" elevation="0">
                 <v-expansion-panel-text>
-                    <div v-for="departments in data.collections.items" :key="departments.id">
-                        <v-list-item :title="departments.name" :value="departments.name"
-                            :href="`/departments/${departments.slug}`">
+                    <div >
+                        <v-list-item title="departments.name" value="departments.name"
+                            href="`/departments/${departments.slug}`">
                         </v-list-item>
                     </div>
                 </v-expansion-panel-text>
