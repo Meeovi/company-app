@@ -74,56 +74,53 @@
             <v-list-item title="" href="/lists/"></v-list-item>
             <v-spacer></v-spacer>
           </v-navigation-drawer>
+
           <v-main id="sidebarNav"></v-main>
           <main id="mainSection">
-            <slot />
+            <div>
+              <slot />
+            </div>
           </main>
         </v-layout>
       </v-card>
+      <FooterNav />
     </v-main>
   </v-app>
 </template>
 
-<script>
-  import search from '../components/Search/search.vue'
-  import ecosystemmenu from '../components/Menus/ecosystemmenu.vue'
-
-  export default {
-    components: {
-      ecosystemmenu,
-      search
-    },
-    data() {
-      return {
-        drawer: null,
-        location: 'bottom',
-        rail: true,
-        loaded: false,
-        loading: false,
-      }
-    },
-
-    methods: {
-      onClick() {
-        this.loading = true
-
-        setTimeout(() => {
-          this.loading = false
-          this.loaded = true
-        }, 2000)
-      },
-    },
-  }
-</script>
-
 <script setup>
+  import search from '~/components/Search/search.vue'
+  import ecosystemmenu from '~/components/Menus/ecosystemmenu.vue'
   import {
     ref
-  } from 'vue'
+  } from 'vue';
+  import {
+    useDark,
+    useToggle
+  } from '@vueuse/core'
+  import {
+    useTheme
+  } from 'vuetify'
 
-  const theme = ref('light')
+  const theme = useTheme()
+  const isDark = useDark()
+  const toggleDark = useToggle(isDark)
 
-  function onClick() {
-    theme.value = theme.value === 'light' ? 'dark' : 'light'
-  };
+  // Sync Vuetify theme with dark mode
+  watch(isDark, (dark) => {
+    theme.global.name.value = dark ? 'dark' : 'light'
+  }, {
+    immediate: true
+  })
+
+  // Initialize user state
+  const drawer = ref(null);
+
+  useSeoMeta({
+    title: 'Starter Template',
+    htmlAttrs: {
+      // uncomment this line to simulate dark mode
+      // class: 'dark',
+    },
+  });
 </script>

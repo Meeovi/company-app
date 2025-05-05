@@ -20,12 +20,21 @@
                 Contact Us
             </v-btn>
             <v-col class="text-center mt-4" cols="12">
-                {{ new Date().getFullYear() }} — <strong><a href="https://phonetool.amazon.com/user/sehilton">Amazon Template</a></strong>
+                {{ new Date().getFullYear() }} — <strong><a href="https://framework.meeovi.com">Starter Template</a></strong>
             </v-col>
         </v-row>
     </v-footer>
 </template>
 
-<script>
-    export default {}
+<script setup>
+  const {
+    $directus,
+    $readItem
+  } = useNuxtApp()
+
+  const {
+    data: about
+  } = await useAsyncData('about', () => {
+    return $directus.request($readItem('navigation', '7',))
+  })
 </script>

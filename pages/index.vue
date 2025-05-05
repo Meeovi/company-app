@@ -9,11 +9,11 @@
 <div class="text-right container">
     <div class="row justify-content-end">
         <div class="col-12 col-lg-5">
-            <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>Alternate Starter</strong></h1>
+            <h1 class="mbr-section-title mbr-fonts-style mb-3 display-1"><strong>M Framework Starter</strong></h1>
             
             <p class="mbr-text mbr-fonts-style display-7">
-                Welcome to the Alternate CMS Starter Template. This template is left to be simplistic and is ready for general use.</p>
-            <div class="mbr-section-btn mt-3"><a class="btn btn-primary display-4" href="https://docs.alternatecms.com" target="_blank">Download AlternateCMS</a></div>
+                Welcome to the M Framework Starter Template. This template is left to be simplistic and is ready for general use.</p>
+            <div class="mbr-section-btn mt-3"><a class="btn btn-primary display-4" href="https://framework.meeovi.com/docs" target="_blank">Download M FrameworkCMS</a></div>
         </div>
     </div>
 </div>

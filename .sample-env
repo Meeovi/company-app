@@ -1,11 +1,14 @@
-# Information here will appear across AlternateCMS
+# Information here will appear across Starter Template
 
 # Database URL
-
 DATABASE_URL='postgresql://username:password@host:port/database'
 
-# Directus Credentials
+#Commerce 
+COMMERCE_STORE_URL=''
+COMMERCE_GRAPHQL_URL=''
+WEBSITE_TOKEN=''
 
+# Directus Credentials
 DIRECTUS_URL=''
 DIRECTUS_GRAPHQL='/graphql'
 NUXTUS_DIRECTUS_STATIC_TOKEN=''
@@ -13,36 +16,45 @@ NUXTUS_DIRECTUS_AUTH=true
 NUXTUS_DIRECTUS_ADMIN_EMAIL=
 NUXTUS_DIRECTUS_ADMIN_PASSWORD=
 
-#VDURE_URL='http://194.164.19.137:3000/shop-api'
+# Meilisearch configuration
+MEILISEARCH_HOST="http://localhost:7700/"
+MEILISEARCH_ADMIN_API_KEY="xxxxxxxx"
+MEILISEARCH_SEARCH_API_KEY="xxxxxxxx"
+MEILISEARCH_INDEX_NAME="xxxxx"
 
 # Google Analytics
-
 NUXT_PUBLIC_GTAG_ID='UA-'
 
-# Graphql
+# JWT Secret
+NUXT_PUBLIC_JWT_SECRET=""
 
+# Meeovi
+NUXT_PUBLIC_SITE_URL=""
+NUXT_PUBLIC_SITE_NAME=""
+NUXT_PUBLIC_SITE_EMAIL=""
+NUXT_PUBLIC_SITE_DESCRIPTION=''
+
+# Sentry
+SENTRY_DSN=""
+
+# Graphql
 GRAPHQL_HOST="http://localhost/graphql"
 GRAPHQL_TOKEN="123456"
 
 # Stripe Credentials
-
 STRIPE_SECRET_KEY=
 STRIPE_PUBLISHABLE_KEY=
 STRIPE_WEBHOOK_SECRET=
 
 PAYPAL_CLIENT_ID=YOUR_CLIENT_ID_GOES_HERE
 PAYPAL_CLIENT_SECRET=YOUR_SECRET_GOES_HERE
-# Turnstile Credentials
 
+# Turnstile Credentials
 NUXT_PUBLIC_TURNSTILE_SITE_KEY=''
 NUXT_TURNSTILE_SECRET_KEY=''
 
-# Wordpress Credentials
-
-API_URL_GRAPHQL='/graphql'
-API_URL="https://example.com"
-WORDPRESS_TOKEN=''
-WP_API_USERNAME=
-WP_API_PASSWORD=
-WOOCOMMERCE_CONSUMER_KEY=""
-WOOCOMMERCE_CONSUMER_SECRET=""
+# Logto Credentials
+NUXT_LOGTO_ENDPOINT=""
+NUXT_LOGTO_APP_ID=""
+NUXT_LOGTO_APP_SECRET=""
+NUXT_LOGTO_COOKIE_ENCRYPTION_KEY=""

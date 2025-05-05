@@ -1,9 +1,6 @@
 <template>
     <div>
         <section class="header5 cid-t7W19CM5wS mbr-fullscreen mbr-parallax-background" id="header5-2">
-
-
-
             <div class="mbr-overlay" style="opacity: 0.2; background-color: rgb(53, 53, 53);"></div>
 
             <div class="container">
