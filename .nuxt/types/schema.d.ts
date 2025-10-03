@@ -452,6 +452,20 @@ declare module 'nuxt/schema' {
       },
 
       multiDomainLocales: boolean,
+
+      domainLocales: {
+         "en-GB": {
+            domain: string,
+         },
+
+         "pl-PL": {
+            domain: string,
+         },
+
+         testde: {
+            domain: string,
+         },
+      },
    },
   }
 }
