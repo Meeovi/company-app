@@ -1,21 +1,21 @@
 {
-   "name": "starter-template",
+   "name": "company-app",
    "version": "0.0.7",
    "description": "This is a template for my projects.",
    "author": "Sebastian Hilton (https://www.sebastianhilton.com)",
    "homepage": "https://www.sebastianhilton.com",
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/Meeovi/Meeovi-Starter-Template"
+      "url": "git+https://github.com/Meeovi/company-app"
    },
    "bugs": {
-      "url": "https://github.com/Meeovi/Meeovi-Starter-Template/issues"
+      "url": "https://github.com/Meeovi/company-app/issues"
    },
    "license": "MIT",
    "private": true,
    "scripts": {
-      "starter-commit": "git add . && git commit -m \"ready for update\"",
-      "starter-update": "git pull \"https://github.com/Meeovi/Meeovi-Starter-Template\"",
+      "company-commit": "git add . && git commit -m \"ready for update\"",
+      "company-update": "git pull \"https://github.com/Meeovi/company-app\"",
       "build": "nuxt build",
       "dev": "nuxt dev",
       "ts-node": "ts-node -r tsconfig-paths/register --compiler-options '{\"module\":\"CommonJS\"}'",
@@ -27,10 +27,10 @@
   "dependencies": {
     "@directus/sdk": "^20.1.0",
     "@directus/types": "^13.2.3",
-    "@fortawesome/fontawesome-free": "^6.7.2",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/vue-fontawesome": "^3.0.8",
+    "@fortawesome/fontawesome-free": "^7.1.0",
+    "@fortawesome/fontawesome-svg-core": "^7.1.0",
+    "@fortawesome/free-solid-svg-icons": "^7.1.0",
+    "@fortawesome/vue-fontawesome": "^3.1.2",
     "@mdi/font": "^7.4.47",
     "@nuxt/image": "^1.11.0",
     "@nuxtjs/leaflet": "^1.3.2",
