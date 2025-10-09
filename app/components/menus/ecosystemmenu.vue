@@ -29,15 +29,11 @@
   </v-row>
 </template>
 
-<script>
-  export default {
-      data() {
-          return {
-              dialog: false,
-              notifications: false,
-              sound: true,
-              widgets: false,
-          }
-      }
-  }
+<script setup>
+    import { ref, watch, onMounted, nextTick } from 'vue'
+
+    const dialog = ref(false)
+    const notifications = ref(false)
+    const sound = ref(true)
+    const widgets = ref(false)
 </script>
