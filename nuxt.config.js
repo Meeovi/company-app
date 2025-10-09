@@ -5,6 +5,8 @@ export default defineNuxtConfig({
     enabled: false
   },
 
+  ssr: false,
+
   app: {
     head: {
       viewport: 'minimum-scale=1, initial-scale=1, width=device-width',
