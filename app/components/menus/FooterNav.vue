@@ -6,7 +6,7 @@
                     <div class="col-lg-5 logo-footer mb-3 mt-3 align-left">
 
                         <p class="mbr-fonts-style text-logo-footer pt-2 mb-0 display-4"
-                            style="width: 100%; text-align: center;">
+                            style="width: 100%; text-align: center; color: white !important;">
                             {{ blocksCopyright?.content?.[0]?.subtitle }} {{ new Date().getFullYear() }}&nbsp;<NuxtLink
                                 :to="blocksCopyright?.content?.[0]?.url">{{ blocksCopyright?.name }}&nbsp;&nbsp;
                             </NuxtLink>

@@ -7,7 +7,7 @@
                 </template>
 
                 <template v-slot:default="{ isActive }">
-                    <v-card min-height="100" min-width="500">
+                    <v-card>
                         <div ref="searchContainer" class="gcse-search"></div>
                         <v-card-actions>
                             <v-btn color="primary" block @click="isActive.value = false">Close Search</v-btn>
