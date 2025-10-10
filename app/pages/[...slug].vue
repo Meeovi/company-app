@@ -17,13 +17,23 @@
         </div>
 
         <div v-else>
+            <section data-bs-version="5.1" class="nichem5 header1 cid-uYyqpQUNF8" id="header01-3">
+                <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(23, 0, 59);"></div>
+
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-lg-12">
+                            <h2 class="mbr-section-subtitle mbr-fonts-style mb-3 display-2"><strong>
+                                    {{ pages?.name }}</strong></h2>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section data-bs-version="5.1" class="nichem5 content1 cid-uYyrGMEdeT" id="content01-b">
                 <div class="container">
                     <div class="row">
                         <div class="title col-md-12 col-lg-8">
-                            <h3 class="mbr-section-title mbr-fonts-style align-left mb-4 display-5">
-                                <strong>{{ pages?.name }}</strong>
-                            </h3>
                             <h4 class="mbr-section-subtitle align-left mbr-fonts-style mb-4 display-7"
                                 v-html="pages?.content"></h4>
                         </div>

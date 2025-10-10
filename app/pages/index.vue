@@ -84,7 +84,7 @@
 
                             <div class="content-wrap align-left">
                                 <h5 class="mbr-section-title card-title mbr-fonts-style align-left mb-3 display-5">
-                                    <strong>{{ page?.repeaterTextBox?.[4]?.subject }}</strong>
+                                    <strong>{{ page?.repeaterTextBox?.[4]?.name }}</strong>
                                 </h5>
 
                                 <p class="card-text mbr-fonts-style align-left mb-4 display-7">
