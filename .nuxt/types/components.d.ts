@@ -23,6 +23,7 @@ interface _GlobalComponents {
     'RelatedArticle': typeof import("../../app/components/related/article.vue")['default']
     'RelatedRelatedposts': typeof import("../../app/components/related/relatedposts.vue")['default']
     'RelatedRelatedproducts': typeof import("../../app/components/related/relatedproducts.vue")['default']
+    'RelatedTopics': typeof import("../../app/components/related/topics.vue")['default']
     'Search': typeof import("../../app/components/search/search.vue")['default']
     'NuxtWelcome': typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']
     'NuxtLayout': typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -194,6 +195,7 @@ interface _GlobalComponents {
     'LazyRelatedArticle': LazyComponent<typeof import("../../app/components/related/article.vue")['default']>
     'LazyRelatedRelatedposts': LazyComponent<typeof import("../../app/components/related/relatedposts.vue")['default']>
     'LazyRelatedRelatedproducts': LazyComponent<typeof import("../../app/components/related/relatedproducts.vue")['default']>
+    'LazyRelatedTopics': LazyComponent<typeof import("../../app/components/related/topics.vue")['default']>
     'LazySearch': LazyComponent<typeof import("../../app/components/search/search.vue")['default']>
     'LazyNuxtWelcome': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
     'LazyNuxtLayout': LazyComponent<typeof import("../../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>

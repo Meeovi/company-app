@@ -23,6 +23,12 @@ body {
     position: relative;
 }
 
+.item-wrapper .v-avatar {
+    text-align: center;
+    width: 350px;
+    height: 100%;
+}
+
 /******************* Main Section CSS *********/
 
 #mainSection {

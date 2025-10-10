@@ -23,6 +23,7 @@ export const MenusTopmenu: typeof import("../app/components/menus/topmenu.vue")[
 export const RelatedArticle: typeof import("../app/components/related/article.vue")['default']
 export const RelatedRelatedposts: typeof import("../app/components/related/relatedposts.vue")['default']
 export const RelatedRelatedproducts: typeof import("../app/components/related/relatedproducts.vue")['default']
+export const RelatedTopics: typeof import("../app/components/related/topics.vue")['default']
 export const Search: typeof import("../app/components/search/search.vue")['default']
 export const NuxtWelcome: typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']
 export const NuxtLayout: typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']
@@ -194,6 +195,7 @@ export const LazyMenusTopmenu: LazyComponent<typeof import("../app/components/me
 export const LazyRelatedArticle: LazyComponent<typeof import("../app/components/related/article.vue")['default']>
 export const LazyRelatedRelatedposts: LazyComponent<typeof import("../app/components/related/relatedposts.vue")['default']>
 export const LazyRelatedRelatedproducts: LazyComponent<typeof import("../app/components/related/relatedproducts.vue")['default']>
+export const LazyRelatedTopics: LazyComponent<typeof import("../app/components/related/topics.vue")['default']>
 export const LazySearch: LazyComponent<typeof import("../app/components/search/search.vue")['default']>
 export const LazyNuxtWelcome: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/welcome.vue")['default']>
 export const LazyNuxtLayout: LazyComponent<typeof import("../node_modules/nuxt/dist/app/components/nuxt-layout")['default']>

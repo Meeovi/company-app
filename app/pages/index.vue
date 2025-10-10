@@ -7,12 +7,11 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-lg-12">
                         <h2 class="mbr-section-subtitle mbr-fonts-style mb-3 display-7"><strong>
-                                WE TEACH YOUR</strong></h2>
-                        <h1 class="mbr-section-title mbr-fonts-style mb-5 display-1"><strong>CREATE INSPIRATING <a
-                                    href="#" class="text-primary"><em>CONTENET</em></a></strong></h1>
+                                {{ page?.repeaterTextBox?.[0]?.name }}</strong></h2>
+                        <h1 class="mbr-section-title mbr-fonts-style mb-5 display-1"><strong>{{ page?.repeaterTextBox?.[0]?.subject }}</strong></h1>
 
                         <p class="mbr-text mbr-fonts-style display-7">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit <br></p>
+                            {{ page?.repeaterTextBox?.[0]?.description }}<br></p>
 
                     </div>
                 </div>
@@ -20,77 +19,55 @@
         </section>
 
         <section data-bs-version="5.1" class="nichem5 features4 cid-uYyqu6KJcI" id="features04-4">
-
+            <div class="container">
+                <div class="mbr-section-head mb-5">
+                    <h4 class="mbr-section-title mbr-fonts-style align-left mb-0 display-6">
+                        <strong>{{ page?.repeaterTextBox?.[1]?.name }}</strong>
+                    </h4>
+                    <h5 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-7">{{ page?.repeaterTextBox?.[1]?.subject }}</h5>
+                </div>
+                <v-sheet class="mx-auto sliderProducts row align-items-stretch items-row justify-content-center">
+                    <v-slide-group v-model="model" class="pa-4" selected-class="bg-success" show-arrows>
+                        <v-slide-group-item v-slot="{ isSelected, toggle, selectedClass }"
+                            v-for="(news, index) in articles" :key="index">
+                            <articleCard :article="news" />
+                        </v-slide-group-item>
+                    </v-slide-group>
+                </v-sheet>
+            </div>
 
             <div class="container">
                 <div class="mbr-section-head mb-5">
-                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                        <strong>FEATURES</strong>
+                    <h4 class="mbr-section-title mbr-fonts-style align-left mb-0 display-6">
+                        <strong>{{ page?.repeaterTextBox?.[2]?.name }}</strong>
                     </h4>
-                    <h5 class="mbr-section-subtitle mbr-fonts-style align-center mb-0 mt-2 display-7">Lorem ipsum dolor
-                        sit amet, consectetur
-                        adipiscing elit</h5>
+                    <h5 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-7">{{ page?.repeaterTextBox?.[2]?.subject }}</h5>
                 </div>
-                <div class="row justify-content-center mt-4">
-                    <div class="item features-image col-12 col-md-6 col-lg-4">
-                        <div class="item-wrapper">
-                            <div class="item-img">
-                                <img src="assets/images/features1.jpg" alt="Mobirise Website Builder">
-                            </div>
-                            <div class="item-content">
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-4">
-                                    <strong>CONTENT</strong>
-                                </h6>
-                                <h5 class="item-title mbr-fonts-style display-7"><strong>LOREM IPSUM DOLOR AMET
-                                        CONSECTETUR&nbsp;</strong></h5>
+                <v-sheet class="mx-auto sliderProducts row align-items-stretch items-row justify-content-center">
+                    <v-slide-group v-model="model" class="pa-4" selected-class="bg-success" show-arrows>
+                        <v-slide-group-item v-slot="{ isSelected, toggle, selectedClass }"
+                            v-for="(news, index) in pixArticles" :key="index">
+                            <articleCard :article="news" />
+                        </v-slide-group-item>
+                    </v-slide-group>
+                </v-sheet>
+            </div>
 
-                                <p class="mbr-text mbr-fonts-style mt-3 display-4">Lorem ipsum dolor sit amet,
-                                    consectetur
-                                    adipiscing elit.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item features-image col-12 col-md-6 col-lg-4">
-                        <div class="item-wrapper">
-                            <div class="item-img">
-                                <img src="assets/images/features2.jpg" alt="Mobirise Website Builder">
-                            </div>
-                            <div class="item-content">
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-4">
-                                    <strong>BLOGGING</strong>
-                                </h6>
-                                <h5 class="item-title mbr-fonts-style display-7"><strong>PROIN URNA NEQUE RHONCUS
-                                        MAGNA&nbsp;</strong></h5>
-
-                                <p class="mbr-text mbr-fonts-style mt-3 display-4">Lorem ipsum dolor sit amet,
-                                    consectetur
-                                    adipiscing elit.</p>
-                            </div>
-
-                        </div>
-                    </div>
-                    <div class="item features-image col-12 col-md-6 col-lg-4">
-                        <div class="item-wrapper">
-                            <div class="item-img">
-                                <img src="assets/images/features3.jpg" alt="Mobirise Website Builder">
-                            </div>
-                            <div class="item-content">
-                                <h6 class="item-subtitle mbr-fonts-style mt-1 display-4">
-                                    <strong>CREATIVE</strong>
-                                </h6>
-                                <h5 class="item-title mbr-fonts-style display-7"><strong>CURABITUR DOLOR SAPIEN
-                                        RUTRUM</strong>
-                                </h5>
-
-                                <p class="mbr-text mbr-fonts-style mt-3 display-4">Lorem ipsum dolor sit amet,
-                                    consectetur
-                                    adipiscing elit.<br></p>
-                            </div>
-
-                        </div>
-                    </div>
+            <div class="container">
+                <div class="mbr-section-head mb-5">
+                    <h4 class="mbr-section-title mbr-fonts-style align-left mb-0 display-6">
+                        <strong>{{ page?.repeaterTextBox?.[3]?.name }}</strong>
+                    </h4>
+                    <h5 class="mbr-section-subtitle mbr-fonts-style align-left mb-0 mt-2 display-7">{{ page?.repeaterTextBox?.[3]?.subject }}</h5>
                 </div>
+                <v-sheet class="mx-auto sliderProducts row align-items-stretch items-row justify-content-center">
+                    <v-slide-group v-model="model" class="pa-4" selected-class="bg-success" show-arrows>
+                        <v-slide-group-item v-slot="{ isSelected, toggle, selectedClass }"
+                            v-for="(news, index) in enovelsArticles" :key="index">
+                            <articleCard :article="news" />
+                        </v-slide-group-item>
+                    </v-slide-group>
+                </v-sheet>
             </div>
         </section>
 
@@ -107,22 +84,16 @@
 
                             <div class="content-wrap align-left">
                                 <h5 class="mbr-section-title card-title mbr-fonts-style align-left mb-3 display-5">
-                                    <strong>CONTENT</strong>
+                                    <strong>{{ page?.repeaterTextBox?.[4]?.subject }}</strong>
                                 </h5>
 
                                 <p class="card-text mbr-fonts-style align-left mb-4 display-7">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non porta erat, non
-                                    viverra
-                                    eros. Mauris consequat massa nisl, quis tincidunt risus ultrices eu. Donec maximus
-                                    tortor a
-                                    eros vestibulum, sed egestas lectus semper. Suspendisse potenti. Vivamus feugiat
-                                    enim sem,
-                                    in porttitor dui aliquam quis.
+                                    {{ page?.repeaterTextBox?.[4]?.description }}
                                 </p>
 
                                 <div class="link-wrapper align-left">
-                                    <p class="mbr-link align-left mbr-fonts-style display-7"><strong>READ MORE</strong>
-                                    </p>
+                                    <NuxtLink :to="page?.repeaterTextBox?.[4]?.url" class="mbr-link align-left mbr-fonts-style display-7"><strong>READ MORE</strong>
+                                    </NuxtLink>
                                 </div>
                             </div>
                         </div>
@@ -134,6 +105,82 @@
 </template>
 
 <script setup>
+    import articleCard from '~/components/related/article.vue'
+
+    const {
+        $directus,
+        $readItems,
+        $readItem
+    } = useNuxtApp()
+
+    const model = ref(null)
+
+    const {
+        data: articles
+    } = await useAsyncData('articles', () => {
+        return $directus.request($readItems('articles', {
+            fields: ['*', {
+                '*': ['*']
+            }],
+            filter: {
+                platform: {
+                    platform_id: {
+                        name: {
+                            _eq: 'About Meeovi'
+                        }
+                    }
+                }
+            }
+        }))
+    })
+
+    const {
+        data: pixArticles
+    } = await useAsyncData('pixArticles', () => {
+        return $directus.request($readItems('articles', {
+            fields: ['*', {
+                '*': ['*']
+            }],
+            filter: {
+                platform: {
+                    platform_id: {
+                        name: {
+                            _eq: 'Pixanomy'
+                        }
+                    }
+                }
+            }
+        }))
+    })
+
+    const {
+        data: enovelsArticles
+    } = await useAsyncData('enovelsArticles', () => {
+        return $directus.request($readItems('articles', {
+            fields: ['*', {
+                '*': ['*']
+            }],
+            filter: {
+                platform: {
+                    platform_id: {
+                        name: {
+                            _eq: 'Elite Novels'
+                        }
+                    }
+                }
+            }
+        }))
+    })
+
+    const {
+        data: page
+    } = await useAsyncData('page', () => {
+        return $directus.request($readItem('pages', '28', {
+            fields: ['*', {
+                '*': ['*']
+            }]
+        }))
+    })
     useHead({
         title: 'About Meeovi',
     })
