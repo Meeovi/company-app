@@ -103,14 +103,14 @@
   } from 'vuetify'
 
   const theme = useTheme();
-  const isDark = useDark();
-  const toggleDark = useToggle(isDark);
+  //const isDark = useDark();
+  //const toggleDark = useToggle(isDark);
 
-  watch(isDark, (dark) => {
+  /*watch(isDark, (dark) => {
     theme.change = dark ? 'dark' : 'light';
   }, {
     immediate: true
-  });
+  });*/
 
   const currentTheme = computed(() => theme.change)
 
