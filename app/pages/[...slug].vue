@@ -1,6 +1,6 @@
 <template>
     <div>
-        <template>
+        <!--<template>
             <v-card v-if="pages?.navigation?.length">
                 <v-tabs bg-color="transparent" center-active>
                     <template v-for="nav in pages?.navigation" :key="nav.navigation_id">
@@ -10,7 +10,7 @@
                     </template>
                 </v-tabs>
             </v-card>
-        </template>
+        </template>-->
 
         <div v-if="pages?.slug === 'topics'">
             <topics />
