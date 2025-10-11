@@ -33,8 +33,8 @@
             <section data-bs-version="5.1" class="nichem5 content1 cid-uYyrGMEdeT" id="content01-b">
                 <div class="container">
                     <div class="row">
-                        <div class="title col-md-12 col-lg-8">
-                            <h4 class="mbr-section-subtitle align-left mbr-fonts-style mb-4 display-7"
+                        <div class="title col-md-12 col-lg-12">
+                            <h4 class="mbr-section-subtitle align-left mbr-fonts-style mb-4 display-7" style="padding-top: 50px;"
                                 v-html="pages?.content"></h4>
                         </div>
                     </div>
@@ -51,55 +51,64 @@
                 </div>
             </section>
 
+            <section data-bs-version="5.1" class="features03 operationm5 cid-uZmv3K1rD0 mbr-fullscreen"
+                id="features03-l" v-if="pagesList.length">
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-lg-10">
+                            <div class="title-wrapper">
+                                <p class="mbr-desc mbr-fonts-style display-7">
+                                    {{ pagesList[0]?.name }}
+                                </p>
+                                <h2 class="mbr-section-title mbr-fonts-style display-2">
+                                    {{ pagesList[0]?.description }}
+                                </h2>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-10">
+                            <div class="items-wrapper">
+                                <div class="item features-without-image item-mb" v-for="(item, i) in pagesList.slice(1)" :key="item.name || i">
+                                    <div class="item-wrapper">
+                                        <div class="card-box">
+                                            <p class="card-text mbr-fonts-style display-5" v-html="item?.name"></p>
+                                            <br>
+                                            <p class="card-text mbr-fonts-style display-7" v-html="item?.description"></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <section data-bs-version="5.1" class="nichem5 features1 cid-uYyqvWzTyk" id="features01-5"
-                style="margin-top: 5%;" v-if="pages?.repeaterTextBox?.length">
+                style="margin-top: 5%;" v-if="repeaterBoxes.length">
                 <div class="container-fluid">
                     <div class="row justify-content-center">
 
-                        <div class="card col-md-12 col-lg-4" style="padding: 10px;">
-                            <div class="card-wrap card1">
+                        <div
+                            v-for="(box, idx) in repeaterBoxes"
+                            :key="box.id || idx"
+                            class="card col-md-12 col-lg-4"
+                            style="padding: 10px;"
+                        >
+                            <div class="card-wrap" :class="`card${(idx%3)+1}`">
 
                                 <div class="content-wrap align-left">
                                     <h5 class="mbr-section-title card-title mbr-fonts-style align-left mb-3 display-5">
-                                        <strong>{{ pages?.repeaterTextBox?.[0]?.name }}</strong>
+                                        <strong>{{ box?.name }}</strong>
                                     </h5>
 
                                     <p class="card-text mbr-fonts-style align-left mb-4 display-7">
-                                        {{ pages?.repeaterTextBox?.[0]?.description }}
+                                        {{ box?.description }}
                                     </p>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="card col-md-12 col-lg-4" style="padding: 10px;">
-                            <div class="card-wrap card2">
-
-                                <div class="content-wrap align-left">
-                                    <h5 class="mbr-section-title card-title mbr-fonts-style align-left mb-3 display-5">
-                                        <strong>{{ pages?.repeaterTextBox?.[1]?.name }}</strong>
-                                    </h5>
-
-                                    <p class="card-text mbr-fonts-style align-left mb-4 display-7">
-                                        {{ pages?.repeaterTextBox?.[1]?.description }}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="card col-md-12 col-lg-4" style="padding: 10px;">
-                            <div class="card-wrap card3">
-
-                                <div class="content-wrap align-left">
-                                    <h5 class="mbr-section-title card-title mbr-fonts-style align-left mb-3 display-5">
-                                        <strong>{{ pages?.repeaterTextBox?.[2]?.name }}</strong>
-                                    </h5>
-
-                                    <p class="card-text mbr-fonts-style align-left mb-4 display-7">
-                                        {{ pages?.repeaterTextBox?.[2]?.description }}
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </section>
@@ -168,6 +177,10 @@
     watch(() => route.fullPath, () => {
         if (typeof refresh === 'function') refresh()
     })
+
+    // Helpers to normalize lists/repeaters for the template
+    const pagesList = computed(() => pages.value?.list || [])
+    const repeaterBoxes = computed(() => pages.value?.repeaterTextBox || [])
 
     useHead({
         title: computed(() => pages.value?.name || 'Page')

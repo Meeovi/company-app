@@ -1,6 +1,6 @@
 /// <reference types="@nuxt/devtools" />
-/// <reference types="@nuxt/image" />
 /// <reference types="@nuxt/telemetry" />
+/// <reference types="@nuxt/image" />
 /// <reference types="@storefront-ui/nuxt" />
 /// <reference types="vuetify-nuxt-module" />
 /// <reference types="@nuxtjs/leaflet" />

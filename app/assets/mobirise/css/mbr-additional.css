@@ -1371,8 +1371,6 @@ a {
   text-align: center;
 }
 .cid-uYyrGMEdeT {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   background-color: #ffffff;
 }
 .cid-uYyrGMEdeT .mbr-fallback-image.disabled {
@@ -1430,6 +1428,113 @@ a {
 .cid-uYyrL0UGAN .mbr-section-subtitle {
   text-align: center;
   color: #ffffff;
+}
+.cid-uZmv3K1rD0 {
+  overflow: hidden;
+  position: relative;
+  background-color: #ffffff;
+}
+.cid-uZmv3K1rD0::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -20%;
+  width: 32rem;
+  height: 100%;
+  background-image: radial-gradient(#55e3fd 0, transparent 100%);
+  border-radius: 100%;
+  z-index: 1;
+  filter: blur(70px);
+}
+.cid-uZmv3K1rD0 .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-uZmv3K1rD0 .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-uZmv3K1rD0 .container-fluid {
+  padding: 0 64px;
+}
+@media (max-width: 992px) {
+  .cid-uZmv3K1rD0 .container-fluid {
+    padding: 0 24px;
+  }
+}
+@media (max-width: 992px) {
+  .cid-uZmv3K1rD0 .container {
+    padding: 0 24px;
+  }
+}
+.cid-uZmv3K1rD0 .row {
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+}
+.cid-uZmv3K1rD0 .title-wrapper {
+  margin-bottom: 130px;
+}
+@media (max-width: 992px) {
+  .cid-uZmv3K1rD0 .title-wrapper {
+    margin-bottom: 32px;
+  }
+}
+.cid-uZmv3K1rD0 .title-wrapper .mbr-desc {
+  margin-bottom: 24px;
+}
+.cid-uZmv3K1rD0 .title-wrapper .mbr-section-title {
+  display: inline-flex;
+  width: 50%;
+  margin-bottom: 0;
+}
+@media (max-width: 992px) {
+  .cid-uZmv3K1rD0 .title-wrapper .mbr-section-title {
+    width: 100%;
+  }
+}
+.cid-uZmv3K1rD0 .items-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4rem;
+  padding-top: 50px;
+  border-top: 1px solid #141414;
+}
+@media (max-width: 992px) {
+  .cid-uZmv3K1rD0 .items-wrapper {
+    display: block;
+    padding: 24px;
+  }
+}
+@media (max-width: 992px) {
+  .cid-uZmv3K1rD0 .items-wrapper .item {
+    margin-bottom: 48px;
+  }
+  .cid-uZmv3K1rD0 .items-wrapper .item:last-child {
+    margin-bottom: 0;
+  }
+}
+.cid-uZmv3K1rD0 .items-wrapper .item .item-wrapper .card-box .card-text {
+  margin-bottom: 0;
+}
+.cid-uZmv3K1rD0 .mbr-section-title {
+  color: #141414;
+}
+.cid-uZmv3K1rD0 .mbr-desc {
+  color: #141414;
+}
+.cid-uZmv3K1rD0 .card-number {
+  color: #141414;
+}
+.cid-uZmv3K1rD0 .card-title {
+  color: #141414;
+}
+.cid-uZmv3K1rD0 .card-text {
+  color: #141414;
 }
 .cid-uYyrMGJpAJ {
   padding-top: 6rem;
