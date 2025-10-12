@@ -48,6 +48,10 @@ body {
     height: 100% !important;
 }
 
+.cid-uZmGbDoGvz .title-wrapper .title-wrap .mbr-section-title {
+    width: auto;
+}
+
 /******************** Sidebar CSS *************/
 
 #sidebarNav {

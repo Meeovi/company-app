@@ -16,6 +16,10 @@
             <topics />
         </div>
 
+        <div v-else-if="pages?.slug === 'careers'">
+            <careers />
+        </div>
+
         <div v-else>
             <section data-bs-version="5.1" class="nichem5 header1 cid-uYyqpQUNF8" id="header01-3">
                 <div class="mbr-overlay" style="opacity: 0.4; background-color: rgb(23, 0, 59);"></div>
@@ -140,6 +144,8 @@
     } from 'vue'
     import articleCard from '~/components/related/article.vue'
     import topics from '~/components/related/topics.vue'
+    import careers from '~/components/related/careers.vue'
+    import { useRoute } from 'vue-router'
 
     const route = useRoute();
     const {

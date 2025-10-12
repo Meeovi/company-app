@@ -21,6 +21,7 @@ export const MenusMobilesearch: typeof import("../app/components/menus/mobilesea
 export const MenusSidebarnav: typeof import("../app/components/menus/sidebarnav.vue")['default']
 export const MenusTopmenu: typeof import("../app/components/menus/topmenu.vue")['default']
 export const RelatedArticle: typeof import("../app/components/related/article.vue")['default']
+export const RelatedCareers: typeof import("../app/components/related/careers.vue")['default']
 export const RelatedRelatedposts: typeof import("../app/components/related/relatedposts.vue")['default']
 export const RelatedRelatedproducts: typeof import("../app/components/related/relatedproducts.vue")['default']
 export const RelatedTopics: typeof import("../app/components/related/topics.vue")['default']
@@ -193,6 +194,7 @@ export const LazyMenusMobilesearch: LazyComponent<typeof import("../app/componen
 export const LazyMenusSidebarnav: LazyComponent<typeof import("../app/components/menus/sidebarnav.vue")['default']>
 export const LazyMenusTopmenu: LazyComponent<typeof import("../app/components/menus/topmenu.vue")['default']>
 export const LazyRelatedArticle: LazyComponent<typeof import("../app/components/related/article.vue")['default']>
+export const LazyRelatedCareers: LazyComponent<typeof import("../app/components/related/careers.vue")['default']>
 export const LazyRelatedRelatedposts: LazyComponent<typeof import("../app/components/related/relatedposts.vue")['default']>
 export const LazyRelatedRelatedproducts: LazyComponent<typeof import("../app/components/related/relatedproducts.vue")['default']>
 export const LazyRelatedTopics: LazyComponent<typeof import("../app/components/related/topics.vue")['default']>

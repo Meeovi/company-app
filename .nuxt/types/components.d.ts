@@ -21,6 +21,7 @@ interface _GlobalComponents {
     'MenusSidebarnav': typeof import("../../app/components/menus/sidebarnav.vue")['default']
     'MenusTopmenu': typeof import("../../app/components/menus/topmenu.vue")['default']
     'RelatedArticle': typeof import("../../app/components/related/article.vue")['default']
+    'RelatedCareers': typeof import("../../app/components/related/careers.vue")['default']
     'RelatedRelatedposts': typeof import("../../app/components/related/relatedposts.vue")['default']
     'RelatedRelatedproducts': typeof import("../../app/components/related/relatedproducts.vue")['default']
     'RelatedTopics': typeof import("../../app/components/related/topics.vue")['default']
@@ -193,6 +194,7 @@ interface _GlobalComponents {
     'LazyMenusSidebarnav': LazyComponent<typeof import("../../app/components/menus/sidebarnav.vue")['default']>
     'LazyMenusTopmenu': LazyComponent<typeof import("../../app/components/menus/topmenu.vue")['default']>
     'LazyRelatedArticle': LazyComponent<typeof import("../../app/components/related/article.vue")['default']>
+    'LazyRelatedCareers': LazyComponent<typeof import("../../app/components/related/careers.vue")['default']>
     'LazyRelatedRelatedposts': LazyComponent<typeof import("../../app/components/related/relatedposts.vue")['default']>
     'LazyRelatedRelatedproducts': LazyComponent<typeof import("../../app/components/related/relatedproducts.vue")['default']>
     'LazyRelatedTopics': LazyComponent<typeof import("../../app/components/related/topics.vue")['default']>
