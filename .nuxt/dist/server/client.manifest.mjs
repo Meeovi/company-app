@@ -1,18 +1,1 @@
-export default {
-  "@vite/client": {
-    "prefetch": true,
-    "isEntry": true,
-    "file": "@vite/client",
-    "css": [],
-    "module": true,
-    "resourceType": "script"
-  },
-  "C:/Users/Basti/Documents/My_Websites/Handmade_Sites/Javascript-Projects/Nuxt-Projects/Meeovi_Framework/Ecosystem/company-app/node_modules/nuxt/dist/app/entry.async.js": {
-    "resourceType": "script",
-    "module": true,
-    "prefetch": true,
-    "preload": true,
-    "isEntry": true,
-    "file": "C:/Users/Basti/Documents/My_Websites/Handmade_Sites/Javascript-Projects/Nuxt-Projects/Meeovi_Framework/Ecosystem/company-app/node_modules/nuxt/dist/app/entry.async.js"
-  }
-}
+export default ({"@vite/client":{prefetch:!0,isEntry:!0,file:"@vite/client",css:[],module:!0,resourceType:"script",dynamicImports:void 0},"C:/Users/Basti/Documents/My_Websites/Handmade_Sites/Javascript-Projects/Nuxt-Projects/Meeovi_Framework/Ecosystem/company-app/node_modules/nuxt/dist/app/entry.async.js":{resourceType:"script",module:!0,prefetch:!0,preload:!0,isEntry:!0,file:"C:/Users/Basti/Documents/My_Websites/Handmade_Sites/Javascript-Projects/Nuxt-Projects/Meeovi_Framework/Ecosystem/company-app/node_modules/nuxt/dist/app/entry.async.js",dynamicImports:void 0}})

@@ -18,7 +18,7 @@ export default defineNuxtConfig({
       },
       meta: [{
         name: 'description',
-        content: 'Starter template for the M Framework'
+        content: 'Meeovi Company Portal'
       }, ],
       link: [{
           rel: 'icon',

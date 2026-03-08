@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-expansion-panels variant="accordion">
-      <v-expansion-panel v-for="menuItem in topmenu" :key="menuItem.id" :title="menuItem?.name"
+      <v-expansion-panel v-for="menuItem in topmenu" :key="menuItem?.id" :title="menuItem?.name"
         expand-icon="fas:fa fa-caret-down" collapse-icon="fas:fa fa-caret-up" elevation="0">
         <v-expansion-panel-text>
           <v-list class="ml-4">
@@ -15,23 +15,15 @@
 </template>
 
 <script setup>
-  const {
-    $directus,
-    $readItems
-  } = useNuxtApp()
+    const {
+        $directus,
+        $readItem
+    } = useNuxtApp()
+    const route = useRoute()
 
-  const {
-    data: topmenu
-  } = await useAsyncData('topmenu', () => {
-    return $directus.request(
-      $readItems('about_departments', {
-        fields: ['*', 'image.*', 'pages.pages_id.*'],
-        deep: {
-          pages: {
-            _sort: ['pages_id.name'] // Sort pages alphabetically by their name
-          }
-        }
-      })
-    )
-  })
+    const {
+        data: topmenu
+    } = await useAsyncData('topmenu', () => {
+        return $directus.request($readItem('navigation', '57'))
+    })
 </script>

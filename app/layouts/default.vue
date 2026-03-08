@@ -3,7 +3,7 @@
     <v-app :theme="currentTheme">
       <v-app-bar id="topnav">
         <template #prepend>
-          <v-btn variant="flat" color="transparent" @click="drawer = !drawer">
+          <v-btn variant="flat" color="transparent" class="menuBtn" @click="drawer = !drawer">
             <v-icon start icon="fas:fa fa-bars" /> Menu
           </v-btn>
         </template>
@@ -39,7 +39,7 @@
             <v-navigation-drawer v-model="drawer" class="sidebarSection" temporary>
               <div class="drawer-content">
                 <v-list nav>
-                  <topmenu />
+                  <sidebarnav />
                   <v-divider />
 
                   <!--<myaccountmenu />-->
@@ -48,17 +48,13 @@
                       <v-btn variant="text" stacked title="Help" prepend-icon="fas:fa fa-question-circle" size="small" style="top: -12px; position: relative;"
                         href="https://help.meeovi.com"></v-btn>
                     </v-col>
-                    <!--<v-col cols="3">
-                      <v-btn variant="text" stacked title="Notifications" prepend-icon="fas:fa fa-bell" size="x-small"
-                        href="/account/user/notifications">Notify Center</v-btn>
-                    </v-col>
                     <v-col cols="3">
                       <v-btn variant="text" @click="toggleDark()">
                         <v-icon>
                           {{ isDark ? 'fas:fa fa-moon' : 'fas:fa fa-sun' }}
                         </v-icon>
                       </v-btn>
-                    </v-col>-->
+                    </v-col>
                     <v-col cols="3">
                       <!--<logout />-->
                     </v-col>
@@ -83,34 +79,27 @@
 
 <script setup>
   import logo from '~/components/blocks/logo.vue'
-  import search from '~/components/search/search.vue'
   import ecosystemmenu from '~/components/menus/ecosystemmenu.vue'
-  import topmenu from '~/components/menus/topmenu.vue'
+  import sidebarnav from '~/components/menus/sidebarnav.vue'
   import mobilesearch from '~/components/menus/mobilesearch.vue'
   import FooterNav from '~/components/menus/FooterNav.vue'
-
+  import { useDark, useToggle } from '@vueuse/core'
   import {
-    ref,
-    watch
-  } from 'vue';
+    ref  } from 'vue';
   //import logout from '~/components/authentication/logout'
-  import {
-    useDark,
-    useToggle
-  } from '@vueuse/core'
   import {
     useTheme
   } from 'vuetify'
 
   const theme = useTheme();
-  //const isDark = useDark();
-  //const toggleDark = useToggle(isDark);
+  const isDark = useDark();
+  const toggleDark = useToggle(isDark);
 
-  /*watch(isDark, (dark) => {
+  watch(isDark, (dark) => {
     theme.change = dark ? 'dark' : 'light';
   }, {
     immediate: true
-  });*/
+  });
 
   const currentTheme = computed(() => theme.change)
 
@@ -121,7 +110,7 @@
     title: 'Starter Template',
     htmlAttrs: {
       // uncomment this line to simulate dark mode
-      // class: 'dark',
+     class: 'dark',
     },
   });
 </script>

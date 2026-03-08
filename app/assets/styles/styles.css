@@ -8,6 +8,15 @@ body {
     width: 100% !important;
 }
 
+.menuBtn {
+    left: 5px;
+}
+
+.ecosystemMenuIcon {
+    position: relative;
+    top: 5px;
+}
+
 .logobrand {
     position: relative;
     text-decoration: none;

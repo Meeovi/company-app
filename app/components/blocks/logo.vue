@@ -2,11 +2,11 @@
     <div>
         <v-app-bar-title>
             <NuxtLink class="logobrand" href="/">
-                <v-icon start color="orange" v-if="blocksSiteoverview?.media?.[0]?.directus_files_id">
+                <!--<v-icon start color="orange" v-if="blocksSiteoverview?.media?.[0]?.directus_files_id">
                     <img loading="lazy"
-                        :src="`${$directus.url}assets/${blocksSiteoverview?.media?.[0]?.directus_files_id?.filename_disk}` || '/images/logo.png'"
+                        :src="`${$directus.url}assets/${blocksSiteoverview?.media?.[0]?.directus_files_id?.filename_disk}` || 'images/logo.png'"
                         :alt="blocksSiteoverview?.name" />
-                </v-icon>
+                </v-icon>-->
                 <p class="logotext">{{ blocksSiteoverview?.name }}<!--Meeovi--></p>
             </NuxtLink>
         </v-app-bar-title>
