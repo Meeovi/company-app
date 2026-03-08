@@ -31,6 +31,4 @@ export { setInterval } from '#app/compat/interval';
 export { useAttrsRef, useDisclosure, useDropdown, useFocusVisible, usePagination, usePopover, useScrollable, useSlotsRef, useTooltip, useTrapFocus } from '@storefront-ui/vue';
 export { definePageMeta } from '../node_modules/nuxt/dist/pages/runtime/composables';
 export { defineLazyHydrationComponent } from '#app/composables/lazy-hydration';
-export { useImage } from '../node_modules/@nuxt/image/dist/runtime/composables';
-export { useDate, useLocale, useDefaults, useDisplay, useLayout, useRtl, useTheme, useGoTo, useHotkey, useMask } from 'vuetify';
-export { useRules } from 'vuetify/labs/rules';
+export { useThemeMode } from '../app/composables/useThemeMode';

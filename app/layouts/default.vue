@@ -83,25 +83,28 @@
   import sidebarnav from '~/components/menus/sidebarnav.vue'
   import mobilesearch from '~/components/menus/mobilesearch.vue'
   import FooterNav from '~/components/menus/FooterNav.vue'
-  import { useDark, useToggle } from '@vueuse/core'
-  import {
-    ref  } from 'vue';
-  //import logout from '~/components/authentication/logout'
-  import {
-    useTheme
-  } from 'vuetify'
+  import { ref, computed, onMounted, watch } from 'vue';
+  import { useTheme } from 'vuetify'
+  import { useThemeMode } from '~/composables/useThemeMode'
 
   const theme = useTheme();
-  const isDark = useDark();
-  const toggleDark = useToggle(isDark);
+  const { isDarkMode, initializeTheme, toggleTheme } = useThemeMode();
+  
+  const toggleDark = () => {
+    toggleTheme();
+    theme.global.name.value = isDarkMode.value ? 'dark' : 'light';
+  };
 
-  watch(isDark, (dark) => {
-    theme.change = dark ? 'dark' : 'light';
-  }, {
-    immediate: true
+  onMounted(() => {
+    initializeTheme();
+    theme.global.name.value = isDarkMode.value ? 'dark' : 'light';
   });
 
-  const currentTheme = computed(() => theme.change)
+  watch(isDarkMode, (newVal) => {
+    theme.global.name.value = newVal ? 'dark' : 'light';
+  });
+
+  const currentTheme = computed(() => isDarkMode.value ? 'dark' : 'light');
 
   // Initialize user state
   const drawer = ref(null);
@@ -109,8 +112,7 @@
   useHead({
     title: 'Starter Template',
     htmlAttrs: {
-      // uncomment this line to simulate dark mode
-     class: 'dark',
+      class: () => isDarkMode.value ? 'dark' : '',
     },
   });
 </script>

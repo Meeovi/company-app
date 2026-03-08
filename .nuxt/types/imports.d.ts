@@ -101,28 +101,19 @@ declare global {
   const useCookie: typeof import('../../node_modules/nuxt/dist/app/composables/cookie').useCookie
   const useCssModule: typeof import('../../node_modules/vue').useCssModule
   const useCssVars: typeof import('../../node_modules/vue').useCssVars
-  const useDate: typeof import('../../node_modules/vuetify').useDate
-  const useDefaults: typeof import('../../node_modules/vuetify').useDefaults
   const useDisclosure: typeof import('../../node_modules/@storefront-ui/vue').useDisclosure
-  const useDisplay: typeof import('../../node_modules/vuetify').useDisplay
   const useDropdown: typeof import('../../node_modules/@storefront-ui/vue').useDropdown
   const useError: typeof import('../../node_modules/nuxt/dist/app/composables/error').useError
   const useFetch: typeof import('../../node_modules/nuxt/dist/app/composables/fetch').useFetch
   const useFocusVisible: typeof import('../../node_modules/@storefront-ui/vue').useFocusVisible
-  const useGoTo: typeof import('../../node_modules/vuetify').useGoTo
   const useHead: typeof import('../../node_modules/nuxt/dist/app/composables/head').useHead
   const useHeadSafe: typeof import('../../node_modules/nuxt/dist/app/composables/head').useHeadSafe
-  const useHotkey: typeof import('../../node_modules/vuetify').useHotkey
   const useHydration: typeof import('../../node_modules/nuxt/dist/app/composables/hydrate').useHydration
   const useId: typeof import('../../node_modules/vue').useId
-  const useImage: typeof import('../../node_modules/@nuxt/image/dist/runtime/composables').useImage
-  const useLayout: typeof import('../../node_modules/vuetify').useLayout
   const useLazyAsyncData: typeof import('../../node_modules/nuxt/dist/app/composables/asyncData').useLazyAsyncData
   const useLazyFetch: typeof import('../../node_modules/nuxt/dist/app/composables/fetch').useLazyFetch
   const useLink: typeof import('../../node_modules/vue-router').useLink
   const useLoadingIndicator: typeof import('../../node_modules/nuxt/dist/app/composables/loading-indicator').useLoadingIndicator
-  const useLocale: typeof import('../../node_modules/vuetify').useLocale
-  const useMask: typeof import('../../node_modules/vuetify').useMask
   const useModel: typeof import('../../node_modules/vue').useModel
   const useNuxtApp: typeof import('../../node_modules/nuxt/dist/app/nuxt').useNuxtApp
   const useNuxtData: typeof import('../../node_modules/nuxt/dist/app/composables/asyncData').useNuxtData
@@ -138,8 +129,6 @@ declare global {
   const useRoute: typeof import('../../node_modules/nuxt/dist/app/composables/router').useRoute
   const useRouteAnnouncer: typeof import('../../node_modules/nuxt/dist/app/composables/route-announcer').useRouteAnnouncer
   const useRouter: typeof import('../../node_modules/nuxt/dist/app/composables/router').useRouter
-  const useRtl: typeof import('../../node_modules/vuetify').useRtl
-  const useRules: typeof import('../../node_modules/vuetify/lib/labs/rules/index').useRules
   const useRuntimeConfig: typeof import('../../node_modules/nuxt/dist/app/nuxt').useRuntimeConfig
   const useRuntimeHook: typeof import('../../node_modules/nuxt/dist/app/composables/runtime-hook').useRuntimeHook
   const useScript: typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs').useScript
@@ -182,7 +171,7 @@ declare global {
   const useSlotsRef: typeof import('../../node_modules/@storefront-ui/vue').useSlotsRef
   const useState: typeof import('../../node_modules/nuxt/dist/app/composables/state').useState
   const useTemplateRef: typeof import('../../node_modules/vue').useTemplateRef
-  const useTheme: typeof import('../../node_modules/vuetify').useTheme
+  const useThemeMode: typeof import('../../app/composables/useThemeMode').useThemeMode
   const useTooltip: typeof import('../../node_modules/@storefront-ui/vue').useTooltip
   const useTransitionState: typeof import('../../node_modules/vue').useTransitionState
   const useTrapFocus: typeof import('../../node_modules/@storefront-ui/vue').useTrapFocus
@@ -307,28 +296,19 @@ declare module 'vue' {
     readonly useCookie: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/cookie')['useCookie']>
     readonly useCssModule: UnwrapRef<typeof import('../../node_modules/vue')['useCssModule']>
     readonly useCssVars: UnwrapRef<typeof import('../../node_modules/vue')['useCssVars']>
-    readonly useDate: UnwrapRef<typeof import('../../node_modules/vuetify')['useDate']>
-    readonly useDefaults: UnwrapRef<typeof import('../../node_modules/vuetify')['useDefaults']>
     readonly useDisclosure: UnwrapRef<typeof import('../../node_modules/@storefront-ui/vue')['useDisclosure']>
-    readonly useDisplay: UnwrapRef<typeof import('../../node_modules/vuetify')['useDisplay']>
     readonly useDropdown: UnwrapRef<typeof import('../../node_modules/@storefront-ui/vue')['useDropdown']>
     readonly useError: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/error')['useError']>
     readonly useFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/fetch')['useFetch']>
     readonly useFocusVisible: UnwrapRef<typeof import('../../node_modules/@storefront-ui/vue')['useFocusVisible']>
-    readonly useGoTo: UnwrapRef<typeof import('../../node_modules/vuetify')['useGoTo']>
     readonly useHead: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useHead']>
     readonly useHeadSafe: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/head')['useHeadSafe']>
-    readonly useHotkey: UnwrapRef<typeof import('../../node_modules/vuetify')['useHotkey']>
     readonly useHydration: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/hydrate')['useHydration']>
     readonly useId: UnwrapRef<typeof import('../../node_modules/vue')['useId']>
-    readonly useImage: UnwrapRef<typeof import('../../node_modules/@nuxt/image/dist/runtime/composables')['useImage']>
-    readonly useLayout: UnwrapRef<typeof import('../../node_modules/vuetify')['useLayout']>
     readonly useLazyAsyncData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useLazyAsyncData']>
     readonly useLazyFetch: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/fetch')['useLazyFetch']>
     readonly useLink: UnwrapRef<typeof import('../../node_modules/vue-router')['useLink']>
     readonly useLoadingIndicator: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/loading-indicator')['useLoadingIndicator']>
-    readonly useLocale: UnwrapRef<typeof import('../../node_modules/vuetify')['useLocale']>
-    readonly useMask: UnwrapRef<typeof import('../../node_modules/vuetify')['useMask']>
     readonly useModel: UnwrapRef<typeof import('../../node_modules/vue')['useModel']>
     readonly useNuxtApp: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/nuxt')['useNuxtApp']>
     readonly useNuxtData: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/asyncData')['useNuxtData']>
@@ -344,8 +324,6 @@ declare module 'vue' {
     readonly useRoute: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['useRoute']>
     readonly useRouteAnnouncer: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/route-announcer')['useRouteAnnouncer']>
     readonly useRouter: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/router')['useRouter']>
-    readonly useRtl: UnwrapRef<typeof import('../../node_modules/vuetify')['useRtl']>
-    readonly useRules: UnwrapRef<typeof import('../../node_modules/vuetify/lib/labs/rules/index')['useRules']>
     readonly useRuntimeConfig: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/nuxt')['useRuntimeConfig']>
     readonly useRuntimeHook: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/runtime-hook')['useRuntimeHook']>
     readonly useScript: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/script-stubs')['useScript']>
@@ -388,7 +366,7 @@ declare module 'vue' {
     readonly useSlotsRef: UnwrapRef<typeof import('../../node_modules/@storefront-ui/vue')['useSlotsRef']>
     readonly useState: UnwrapRef<typeof import('../../node_modules/nuxt/dist/app/composables/state')['useState']>
     readonly useTemplateRef: UnwrapRef<typeof import('../../node_modules/vue')['useTemplateRef']>
-    readonly useTheme: UnwrapRef<typeof import('../../node_modules/vuetify')['useTheme']>
+    readonly useThemeMode: UnwrapRef<typeof import('../../app/composables/useThemeMode')['useThemeMode']>
     readonly useTooltip: UnwrapRef<typeof import('../../node_modules/@storefront-ui/vue')['useTooltip']>
     readonly useTransitionState: UnwrapRef<typeof import('../../node_modules/vue')['useTransitionState']>
     readonly useTrapFocus: UnwrapRef<typeof import('../../node_modules/@storefront-ui/vue')['useTrapFocus']>

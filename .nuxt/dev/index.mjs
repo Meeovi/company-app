@@ -2045,7 +2045,7 @@ async function errorHandler(error, event) {
 
 const rootDir = "C:/Users/Basti/Documents/My_Websites/Handmade_Sites/Javascript-Projects/Nuxt-Projects/Meeovi_Framework/Ecosystem/company-app";
 
-const appHead = {"meta":[{"name":"viewport","content":"minimum-scale=1, initial-scale=1, width=device-width"},{"charset":"utf-8"},{"name":"description","content":"Meeovi"}],"link":[{"rel":"icon","href":"/favicon.ico"},{"rel":"apple-touch-icon","href":"/icons/apple-touch-icon-180x180.png"}],"style":[],"script":[{}],"noscript":[],"viewport":"minimum-scale=1, initial-scale=1, width=device-width","templateParams":{"separator":"·"},"htmlAttrs":{"lang":"en"}};
+const appHead = {"meta":[{"name":"viewport","content":"minimum-scale=1, initial-scale=1, width=device-width"},{"charset":"utf-8"},{"name":"description","content":"Meeovi Company Portal"}],"link":[{"rel":"icon","href":"/favicon.ico"},{"rel":"apple-touch-icon","href":"/icons/apple-touch-icon-180x180.png"}],"style":[],"script":[{}],"noscript":[],"viewport":"minimum-scale=1, initial-scale=1, width=device-width","templateParams":{"separator":"·"},"htmlAttrs":{"lang":"en"}};
 
 const appRootTag = "div";
 
